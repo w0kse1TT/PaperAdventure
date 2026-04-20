@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b86lf5v6crnm7"]
+
+[ext_resource type="Texture2D" uid="uid://4dsfycikq5gk" path="res://Textures/Props/Sign.png" id="1_qk4kg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2pfb2"]
+font_size = 100
+font_color = Color(0.86510104, 0.72533625, 0.45706254, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5wg6p"]
+font_size = 100
+font_color = Color(0.8666667, 0.7254902, 0.45882353, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbl3b"]
+size = Vector2(197, 381)
+
+[node name="Sign" type="StaticBody2D" unique_id=1679965885]
+scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1110258663]
+position = Vector2(0, 8.106232e-05)
+texture = ExtResource("1_qk4kg")
+offset = Vector2(0, -400)
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=1381463787]
+offset_left = -219.00002
+offset_top = -693.00006
+offset_right = 212.99998
+offset_bottom = -556.00006
+rotation = -0.054586437
+text = "Деревня"
+label_settings = SubResource("LabelSettings_2pfb2")
+
+[node name="Label2" type="Label" parent="Sprite2D" unique_id=315465170]
+offset_left = -111.00001
+offset_top = -526.00006
+offset_right = 122.99999
+offset_bottom = -348.00006
+text = "Лес"
+label_settings = SubResource("LabelSettings_5wg6p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1292447822]
+position = Vector2(-7.5, -185.49994)
+shape = SubResource("RectangleShape2D_fbl3b")

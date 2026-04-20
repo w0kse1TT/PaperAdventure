@@ -1,0 +1,140 @@
+[gd_scene format=4 uid="uid://dv14vcys7frw2"]
+
+[ext_resource type="Texture2D" uid="uid://diabsshptfx5" path="res://Textures/Ground/Paper1.png" id="1_har61"]
+[ext_resource type="Texture2D" uid="uid://d0yruqm2c3i7l" path="res://Textures/Player/Idle.png" id="1_ltlt2"]
+[ext_resource type="Texture2D" uid="uid://becnk7u8cymqf" path="res://Textures/GUI/ButtonExit.png" id="2_5h2sk"]
+[ext_resource type="Texture2D" uid="uid://diacrvjkp3xjb" path="res://Textures/GUI/ButtonSetting.png" id="2_vsnsf"]
+[ext_resource type="Script" uid="uid://cx2gim8f76h1r" path="res://Scripts/Menu/ButtonSetting.gd" id="3_a2vjc"]
+[ext_resource type="Script" uid="uid://b843xvxrgyi5j" path="res://Scripts/Menu/ButtonExit.gd" id="3_vsnsf"]
+[ext_resource type="Texture2D" uid="uid://cc2eppkeuowoh" path="res://Textures/GUI/ButtonNewGame.png" id="6_i364t"]
+[ext_resource type="Script" uid="uid://dta5wgbmaofvt" path="res://Scripts/Menu/ButtonNewGame.gd" id="7_xd10f"]
+[ext_resource type="Texture2D" uid="uid://cvj3v2yw6ja01" path="res://Textures/GUI/ButtonContinue.png" id="8_4w0k6"]
+[ext_resource type="Script" uid="uid://rbmgig1h4t6c" path="res://Scripts/Menu/ButtonContinue.gd" id="9_har61"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fblpy"]
+texture = ExtResource("1_har61")
+texture_region_size = Vector2i(500, 500)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_id1co"]
+tile_size = Vector2i(500, 500)
+sources/0 = SubResource("TileSetAtlasSource_fblpy")
+
+[sub_resource type="LabelSettings" id="LabelSettings_a2vjc"]
+font_size = 100
+outline_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_1k0e5"]
+font_size = 180
+
+[sub_resource type="LabelSettings" id="LabelSettings_4w0k6"]
+font_size = 110
+
+[sub_resource type="LabelSettings" id="LabelSettings_fblpy"]
+font_size = 100
+outline_size = 4
+
+[node name="Node2D" type="Node2D" unique_id=454472466]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=454068105]
+position = Vector2(198.505, 196.865)
+scale = Vector2(0.4, 0.4)
+
+[node name="Background" type="TileMapLayer" parent="Node2D" unique_id=536452977]
+tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAD/////AAAAAAAAAAADAP//AAAAAAAAAAADAAAAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAD//wEAAAAAAAAAAAABAP//AAAAAAAAAAABAAAAAAAAAAAAAAACAP//AAAAAAAAAAACAAAAAAAAAAAAAAAEAP//AAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAD//wIAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_id1co")
+
+[node name="Player" type="Sprite2D" parent="." unique_id=554994752]
+position = Vector2(988.0001, 389.99997)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_ltlt2")
+
+[node name="ButtonSetting" type="Sprite2D" parent="." unique_id=1093296174]
+position = Vector2(228, 406)
+scale = Vector2(0.34999996, 0.34999996)
+texture = ExtResource("2_vsnsf")
+
+[node name="Button" type="Button" parent="ButtonSetting" unique_id=211338880]
+offset_left = -448.57147
+offset_top = -148.57147
+offset_right = 471.42865
+offset_bottom = 157.14282
+flat = true
+script = ExtResource("3_a2vjc")
+
+[node name="Label" type="Label" parent="ButtonSetting" unique_id=588588563]
+offset_left = -128.57144
+offset_top = -74.28572
+offset_right = 440.0001
+offset_bottom = 74.28569
+text = "Настройки"
+label_settings = SubResource("LabelSettings_a2vjc")
+
+[node name="ButtonExit" type="Sprite2D" parent="." unique_id=609830342]
+position = Vector2(228.00002, 536)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_5h2sk")
+
+[node name="Button" type="Button" parent="ButtonExit" unique_id=1328667471]
+offset_left = -456.66663
+offset_top = -149.99995
+offset_right = 470.0
+offset_bottom = 153.3333
+flat = true
+script = ExtResource("3_vsnsf")
+
+[node name="Label" type="Label" parent="ButtonExit" unique_id=72770284]
+offset_left = -203.33331
+offset_top = -136.66663
+offset_right = 390.0
+offset_bottom = 109.333374
+text = "Выход"
+label_settings = SubResource("LabelSettings_1k0e5")
+
+[node name="ButtonNewGame" type="Sprite2D" parent="." unique_id=1259017644]
+position = Vector2(228, 276)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_i364t")
+
+[node name="Label" type="Label" parent="ButtonNewGame" unique_id=1573368198]
+offset_left = -205.71417
+offset_top = -88.57141
+offset_right = 479.28583
+offset_bottom = 76.42859
+text = "Новая игра"
+label_settings = SubResource("LabelSettings_4w0k6")
+
+[node name="Button" type="Button" parent="ButtonNewGame" unique_id=1986466002]
+offset_left = -457.14285
+offset_top = -160.0
+offset_right = 468.57126
+offset_bottom = 142.85712
+flat = true
+script = ExtResource("7_xd10f")
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonContinue" type="Sprite2D" parent="." unique_id=1044923124]
+position = Vector2(228, 146)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("8_4w0k6")
+
+[node name="Button" type="Button" parent="ButtonContinue" unique_id=1158963297]
+offset_left = -442.85712
+offset_top = -177.14284
+offset_right = 474.2857
+offset_bottom = 125.71428
+flat = true
+script = ExtResource("9_har61")
+
+[node name="Label" type="Label" parent="ButtonContinue" unique_id=1246143238]
+offset_left = -211.42853
+offset_top = -108.57144
+offset_right = 621.5715
+offset_bottom = 69.42856
+text = "Продолжить"
+label_settings = SubResource("LabelSettings_fblpy")
+
+[connection signal="button_up" from="ButtonSetting/Button" to="ButtonSetting/Button" method="_on_button_up"]
+[connection signal="button_up" from="ButtonExit/Button" to="ButtonExit/Button" method="_on_button_up"]
+[connection signal="button_up" from="ButtonNewGame/Button" to="ButtonNewGame/Button" method="_on_button_up"]
+[connection signal="button_up" from="ButtonContinue/Button" to="ButtonContinue/Button" method="_on_button_up"]

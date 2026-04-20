@@ -1,0 +1,14 @@
+TileMapLayer
+CollisionShape2D
+Sprite2D
+StaticBody2D
+Label
+Node2D
+Button
+ColorRect
+RigidBody2D
+TileMap
+CharacterBody2D
+PhantomCameraHost
+Camera2D
+PhantomCamera2D
