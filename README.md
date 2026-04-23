@@ -10,9 +10,9 @@ Paper Adventure это захватывающие приключения где 
 Простая графика не надоедает, а юмор заставляет смеяться. В общих чертах это идеальная игра для любителей быстрых сюжетов, затягивающего геймплея и остроумного юмора</h4>
 <h4>Игра сделана тремя людьми:</h4>
 <ol>
-    <ul>•powrey</ul>
-    <ul>•BoLTPoRT</ul>
-    <ul>•zip_type</ul>
+    <ul>• powrey</ul>
+    <ul>• BoLTPoRT</ul>
+    <ul>• zip_type</ul>
 </ol>
 
 
@@ -23,8 +23,8 @@ Paper Adventure is a thrilling adventure where you'll have to navigate unique wo
 The simple graphics never get boring, and the humor makes you laugh. Overall, it's the perfect game for lovers of fast-paced stories, engaging gameplay, and witty humor.</h4>
 <h4>The game was made by three people:</h4>
 <ol>
-    <ul>•powrey</ul>
-    <ul>•BoLTPoRT</ul>
-    <ul>•zip_type</ul>
+    <ul>• powrey</ul>
+    <ul>• BoLTPoRT</ul>
+    <ul>• zip_type</ul>
 </ol>
 
